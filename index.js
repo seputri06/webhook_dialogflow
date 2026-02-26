@@ -9,14 +9,32 @@ const PORT = process.env.PORT || 3000;
 // Data Jadwal (bisa diganti database)
 const jadwal = {
   Monday: [
-    { jam: "07.00 - 08.30", mapel: "Matematika" },
-    { jam: "08.30 - 10.00", mapel: "Bahasa Indonesia" }
+    "07.30 bahasa bali",
+    "08.50 IPAS"
+    "09.30 bahasa indonesia"
   ],
-  Tuesday: [
-    { jam: "07.00 - 08.30", mapel: "IPA" },
-    { jam: "08.30 - 10.00", mapel: "IPS" }
-  ]
-};
+  selasa: [
+    "05.45 pjok",
+    "09.30 DDA"
+    "14.20 matematika
+  ],
+rabu: [
+  "07.30 ppkn",
+  "08.50 matematika"
+  "10.40 seni budaya"
+  " 12.00 sejarah"
+  "13.40 BK"
+ "14.20 bahasa indonesia"
+],
+  kamis: [
+    "07.30 KKA"
+    "08.50 DDA"
+    "13.40 AGAMA"
+],
+  JUMAT: [
+    "07.30 INFORMATIKA"
+    "11.20 BAHASA INGGRIS"
+
 
 app.post("/webhook", (req, res) => {
   const intent = req.body.queryResult.intent.displayName;
